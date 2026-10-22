@@ -38,6 +38,10 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
+ビルドで使用する Node.js のバージョンは `.node-version` で管理します。Node.js のセキュリティ更新時はこのファイルを更新し、同じバージョンの Node.js と Bun 1.0.0 で `bun install` と `bun run build` を実行してください。
+
+プルリクエストでは GitHub Actions がビルドを検証します。GitHub Pages への公開は `main` への push または `main` を選択した手動実行で行います。
+
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
